@@ -1,0 +1,29 @@
+{
+  "name": "prediktive-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./src/test/*.js --testTimeout 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarleyGabriel/prediktive-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WarleyGabriel/prediktive-challenge/issues"
+  },
+  "homepage": "https://github.com/WarleyGabriel/prediktive-challenge#readme",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-jest": "^26.6.3"
+  }
+}
