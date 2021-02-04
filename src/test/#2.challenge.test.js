@@ -5,7 +5,9 @@ test(`Print the name of each character from the result set in a comma separated 
 
   const result = JSON.parse(response.text).RelatedTopics.reduce((r, i) => {
     const regex = /<a.+">(.+)<\/a>/g;
-    const [, name] = regex.exec(i.Result);
+    let [, name] = regex.exec(i.Result);
+
+    name = name.replace(/\(.+\)/g, "");
 
     if (!r) {
       r = name;

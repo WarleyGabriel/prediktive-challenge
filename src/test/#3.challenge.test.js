@@ -8,5 +8,6 @@ test(`Assert if "min_abstract_length" is a valid number`, async () => {
 
   expect(minAbstractLength).toEqual(expect.anything());
 
-  expect(typeof minAbstractLength).toBe("number");
+  const intMinAbstractLength = parseInt(minAbstractLength);
+  expect(typeof intMinAbstractLength).toBe("number");
 });
